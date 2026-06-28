@@ -52,12 +52,7 @@ def index():
         except Exception:
             recipient = None
 
-    body = (
-        f"Name: {name}\n"
-        f"Email: {email}\n"
-        f"Subject: {subject}\n\n"
-        f"{message}\n"
-    )
+    body = f"Name: {name}\nEmail: {email}\nSubject: {subject}\n\n{message}\n"
     if recipient:
         try:
             mail.send(

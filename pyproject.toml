@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "splent_feature_contact"
-version = "0.0.1"
+version = "0.1.0"
 readme = "README.md"
 requires-python = ">=3.13"
 
@@ -23,34 +23,30 @@ exclude = ["*.tests", "*.tests.*"]
 [tool.splent]
 cli_version = "1.11.0"
 
-# ── Feature Contract ──────────────────────────────────────────────────────────
-# Declares what this feature provides to and requires from the product.
-# Used by `splent feature:check` and `splent product:derive` for validation.
+# ── Feature Contract (auto-generated) ────────────────────────────────────────
+# Do not edit manually — re-run `splent feature:contract --write` to refresh.
 [tool.splent.contract]
 description = "contact feature"
 
 [tool.splent.contract.provides]
-# Routes exposed by this feature
-routes = ["/contact"]
-# Blueprint names registered into Flask
-blueprints = ["contact_bp"]
-# SQLAlchemy models introduced by this feature
-models = ["ContactMessage"]
-# CLI commands added by this feature
-commands = []
+routes     = ["/admin/contact", "/admin/contact/<int:message_id>/delete", "/admin/contact/<int:message_id>/read", "/contact"]
+blueprints = []
+models     = ["ContactMessage"]
+commands   = ["hello"]
+hooks      = ["layout.authenticated_sidebar"]
+services   = ["ContactService"]
+signals    = ["contact-created", "contact-submitting"]
+translations = []
+docker     = []
 
 [tool.splent.contract.requires]
-# Other SPLENT features this feature depends on (e.g. ["auth", "mail"])
-features = ["mail"]
-# Environment variables this feature expects to be set
+features = []
 env_vars = []
+signals  = []
 
-# ── Extension points ──────────────────────────────────────────────────────────
-# Declares what other features can override or extend via refinement.
-# See: splent feature:xray
 [tool.splent.contract.extensible]
-services = []
-templates = []
-models = []
-hooks = []
-routes = false
+services  = ["ContactService"]
+templates = ["contact/admin/list.html", "contact/index.html"]
+models    = ["ContactMessage"]
+hooks     = ["layout.authenticated_sidebar"]
+routes    = false
