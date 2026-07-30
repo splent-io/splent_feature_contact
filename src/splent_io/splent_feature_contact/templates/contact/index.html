@@ -24,6 +24,7 @@
   <form class="contact-form"
         method="POST"
         action="{{ url_for('contact.index') }}">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
 
     <div class="form-group">
       <label for="contact-name">{{ _('Name') }}</label>

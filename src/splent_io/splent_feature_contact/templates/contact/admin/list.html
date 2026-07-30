@@ -54,6 +54,7 @@
               <form method="POST"
                     action="{{ url_for('contact.admin_read', message_id=m.id) }}"
                     class="d-inline">
+                  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
                 <button type="submit" class="btn btn-sm btn-success">
                   {{ _('Mark read') }}
                 </button>
@@ -63,6 +64,7 @@
                   action="{{ url_for('contact.admin_delete', message_id=m.id) }}"
                   class="d-inline"
                   onsubmit="return confirm('{{ _('Delete this message?') }}');">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
               <button type="submit"
                       class="btn btn-sm btn-danger"
                       title="{{ _('Delete') }}"
