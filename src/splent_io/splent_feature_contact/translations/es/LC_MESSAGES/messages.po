@@ -1,0 +1,102 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-07-30 12:00+0000\n"
+"PO-Revision-Date: 2026-07-30 12:00+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: src/splent_io/splent_feature_contact/templates/contact/admin/list.html:3
+#: src/splent_io/splent_feature_contact/templates/contact/admin/list.html:9
+#: src/splent_io/splent_feature_contact/templates/contact/index.html:3
+#: src/splent_io/splent_feature_contact/templates/contact/index.html:6
+msgid "Contact"
+msgstr "Contacto"
+
+#: src/splent_io/splent_feature_contact/templates/contact/index.html:6
+msgid "Get in touch"
+msgstr "Escríbenos"
+
+#: src/splent_io/splent_feature_contact/templates/contact/index.html:7
+msgid "Send us a message and we will get back to you."
+msgstr "Envíanos un mensaje y te responderemos."
+
+#: src/splent_io/splent_feature_contact/templates/contact/index.html:29
+msgid "Name"
+msgstr "Nombre"
+
+#: src/splent_io/splent_feature_contact/templates/contact/index.html:38
+msgid "Email"
+msgstr "Email"
+
+#: src/splent_io/splent_feature_contact/templates/contact/admin/list.html:28
+#: src/splent_io/splent_feature_contact/templates/contact/index.html:47
+msgid "Subject"
+msgstr "Asunto"
+
+#: src/splent_io/splent_feature_contact/templates/contact/admin/list.html:29
+#: src/splent_io/splent_feature_contact/templates/contact/index.html:55
+msgid "Message"
+msgstr "Mensaje"
+
+#: src/splent_io/splent_feature_contact/templates/contact/index.html:70
+msgid "Send message"
+msgstr "Enviar mensaje"
+
+#: src/splent_io/splent_feature_contact/templates/contact/admin/list.html:10
+msgid "Messages submitted through the contact form."
+msgstr "Mensajes enviados desde el formulario de contacto."
+
+#: src/splent_io/splent_feature_contact/templates/contact/admin/list.html:27
+msgid "From"
+msgstr "De"
+
+#: src/splent_io/splent_feature_contact/templates/contact/admin/list.html:30
+msgid "Date"
+msgstr "Fecha"
+
+#: src/splent_io/splent_feature_contact/templates/contact/admin/list.html:31
+msgid "Status"
+msgstr "Estado"
+
+#: src/splent_io/splent_feature_contact/templates/contact/admin/list.html:32
+msgid "Actions"
+msgstr "Acciones"
+
+#: src/splent_io/splent_feature_contact/templates/contact/admin/list.html:47
+msgid "read"
+msgstr "leído"
+
+#: src/splent_io/splent_feature_contact/templates/contact/admin/list.html:49
+msgid "unread"
+msgstr "sin leer"
+
+#: src/splent_io/splent_feature_contact/templates/contact/admin/list.html:58
+msgid "Mark read"
+msgstr "Marcar como leído"
+
+#: src/splent_io/splent_feature_contact/templates/contact/admin/list.html:65
+msgid "Delete this message?"
+msgstr "¿Eliminar este mensaje?"
+
+#: src/splent_io/splent_feature_contact/templates/contact/admin/list.html:68
+#: src/splent_io/splent_feature_contact/templates/contact/admin/list.html:69
+msgid "Delete"
+msgstr "Eliminar"
+
+#: src/splent_io/splent_feature_contact/templates/contact/admin/list.html:84
+msgid "No messages yet."
+msgstr "Todavía no hay mensajes."
+
