@@ -67,7 +67,7 @@ def index():
     contact_created.send(None, message=contact_message)
 
     success = get_config("contact").get("success_message") or (
-        "Thanks — we'll be in touch."
+        "Thanks, we'll be in touch."
     )
     flash(success, "success")
     return redirect(url_for("contact.index"))

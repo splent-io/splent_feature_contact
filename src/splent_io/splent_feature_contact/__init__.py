@@ -38,7 +38,7 @@ def init_feature(app):
             {
                 "key": "success_message",
                 "type": "text",
-                "default": "Thanks — we'll be in touch.",
+                "default": "Thanks, we'll be in touch.",
                 "label": "Success message",
             },
         ],
