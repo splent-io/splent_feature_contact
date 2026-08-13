@@ -72,5 +72,9 @@
     </button>
   </form>
 
+  {# A slot for whatever wants to sit under the form. The map feature
+     registers here; contact knows nothing about maps or providers. #}
+  {% for hook in get_template_hooks("contact.map") %}{{ hook() | safe }}{% endfor %}
+
 </div>
 {% endblock %}
