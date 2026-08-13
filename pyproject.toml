@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "splent_feature_contact"
-version = "0.1.3"
+version = "0.2.0"
 readme = "README.md"
 requires-python = ">=3.13"
 
@@ -54,5 +54,5 @@ signals  = []
 services  = ["ContactService"]
 templates = ["contact/admin/list.html", "contact/index.html"]
 models    = ["ContactMessage"]
-hooks     = ["layout.authenticated_sidebar"]
+hooks     = ["contact.map", "layout.authenticated_sidebar"]
 routes    = false
